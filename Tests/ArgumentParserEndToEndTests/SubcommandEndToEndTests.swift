@@ -135,14 +135,14 @@ fileprivate struct Math: ParsableCommand {
   }
 }
 
-extension SubcommandEndToEndTests {
-  func testParsing_SingleCommand() throws {
-    var mathCommand = try Math.parseAsRoot(["--operation", "multiply", "-v", "5", "11"])
-    XCTAssertFalse(mathDidRun)
-    try mathCommand.run()
-    XCTAssertTrue(mathDidRun)
-  }
-}
+//extension SubcommandEndToEndTests {
+//  func testParsing_SingleCommand() throws {
+//    var mathCommand = try Math.parseAsRoot(["--operation", "multiply", "-v", "5", "11"])
+//    XCTAssertFalse(mathDidRun)
+//    try mathCommand.run()
+//    XCTAssertTrue(mathDidRun)
+//  }
+//}
 
 // MARK: Nested Command Arguments Validated
 
